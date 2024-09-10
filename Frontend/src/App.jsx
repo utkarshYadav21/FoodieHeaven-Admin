@@ -5,6 +5,8 @@ import Navbar from "./common/Navbar";
 import AddDishes from "./pages/AddDishes";
 import ListDishes from "./pages/ListDishes";
 import Orders from "./pages/Orders";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
               <Route path="/add" element={<AddDishes />} />
               <Route path="/list" element={<ListDishes />} />
               <Route path="/orders" element={<Orders />} />
+              <Route path="/login" element=<Login /> />
+              <Route path="/signup" element=<Register /> />
               <Route path="/" element={<p>Welcome to the Admin Dashboard</p>} />
             </Routes>
           </div>
